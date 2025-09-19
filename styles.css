@@ -1,0 +1,672 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+    color: white;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 120px;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+/* Logo background styles */
+.logo-background {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.background-logo {
+    height: 200px;
+    width: auto;
+    filter: grayscale(100%);
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h3 {
+    color: #065f46;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #10b981;
+    position: relative;
+}
+
+h3::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #f59e0b;
+}
+
+h4 {
+    color: #374151;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Executive Summary */
+.executive-summary {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.executive-summary p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #4b5563;
+}
+
+.investment-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.highlight-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-left: 4px solid #10b981;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-label {
+    display: block;
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.highlight-value {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #065f46;
+    margin-bottom: 0.25rem;
+}
+
+.highlight-note {
+    display: block;
+    font-size: 0.85rem;
+    color: #6b7280;
+    font-style: italic;
+}
+
+/* What You Get Section */
+.component {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.component:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.component-header {
+    background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+    color: white;
+    padding: 1rem 1.5rem;
+}
+
+.component-header h4 {
+    color: white;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.component ul {
+    padding: 1.5rem;
+    list-style: none;
+}
+
+.component li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    color: #4b5563;
+}
+
+.component li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Data Protection */
+.protection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.protection-item {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #10b981;
+}
+
+.protection-item h4 {
+    color: #065f46;
+    margin-bottom: 1rem;
+}
+
+.protection-item ul {
+    list-style: none;
+}
+
+.protection-item li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    color: #4b5563;
+}
+
+.protection-item li::before {
+    content: '🔒';
+    position: absolute;
+    left: 0;
+    font-size: 1rem;
+}
+
+/* Add-ons */
+.add-on-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.add-on-item {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-on-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-on-item h4 {
+    color: #065f46;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.add-on-item ul {
+    list-style: none;
+}
+
+.add-on-item li {
+    padding: 0.4rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.add-on-item li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* Timeline */
+.timeline-container {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #10b981, #065f46);
+}
+
+.timeline-phase {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.phase-number {
+    position: absolute;
+    left: -1.5rem;
+    top: 0;
+    width: 3rem;
+    height: 3rem;
+    background: linear-gradient(135deg, #10b981, #065f46);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.phase-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #10b981;
+}
+
+.phase-content h4 {
+    color: #065f46;
+    margin-bottom: 1rem;
+}
+
+.phase-content ul {
+    list-style: none;
+}
+
+.phase-content li {
+    padding: 0.4rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    color: #4b5563;
+}
+
+.phase-content li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Why Choose Us */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.why-item {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    border-top: 4px solid #f59e0b;
+}
+
+.why-item h4 {
+    color: #065f46;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.why-item ul {
+    list-style: none;
+}
+
+.why-item li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    color: #4b5563;
+}
+
+.why-item li::before {
+    content: '⭐';
+    position: absolute;
+    left: 0;
+    font-size: 1rem;
+}
+
+/* Investment Summary */
+.summary-table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    color: #4b5563;
+}
+
+.total-row {
+    background: #f8fafc;
+    font-weight: bold;
+}
+
+.total-row td {
+    color: #065f46;
+    font-size: 1.1rem;
+}
+
+/* Next Steps */
+.next-steps ol {
+    list-style: none;
+    counter-reset: step-counter;
+}
+
+.next-steps li {
+    counter-increment: step-counter;
+    padding: 1rem 0;
+    position: relative;
+    padding-left: 3rem;
+    color: #4b5563;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.next-steps li:last-child {
+    border-bottom: none;
+}
+
+.next-steps li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background: linear-gradient(135deg, #10b981, #065f46);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Contact Info */
+.contact-info {
+    background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-info h3 {
+    color: white;
+    border-bottom-color: #f59e0b;
+}
+
+.contact-details {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.contact-details p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.validity-note {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #f59e0b;
+}
+
+.validity-note p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.validity-note p:last-child {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+/* Export Section */
+.export-section {
+    padding: 2rem;
+    text-align: center;
+    background: #f8fafc;
+}
+
+.export-btn {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
+}
+
+.export-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(16, 185, 129, 0.4);
+}
+
+.export-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        text-align: center;
+        min-height: 100px;
+    }
+    
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .header h2 {
+        font-size: 1.1rem;
+    }
+    
+    .background-logo {
+        height: 150px;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    .investment-highlights {
+        grid-template-columns: 1fr;
+    }
+    
+    .protection-grid,
+    .add-on-grid,
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-container {
+        padding-left: 1rem;
+    }
+    
+    .timeline-phase {
+        padding-left: 1.5rem;
+    }
+    
+    .phase-number {
+        left: -1rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    
+    .summary-table {
+        overflow-x: auto;
+    }
+    
+    table {
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 0;
+        box-shadow: none;
+    }
+    
+    .header {
+        padding: 1.5rem;
+    }
+    
+    .background-logo {
+        height: 100px;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+    
+    .highlight-box,
+    .component,
+    .protection-item,
+    .add-on-item,
+    .why-item {
+        padding: 1rem;
+    }
+    
+    .export-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .export-section {
+        display: none;
+    }
+    
+    .container {
+        box-shadow: none;
+    }
+    
+    .header {
+        background: #065f46 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .highlight-box,
+    .component,
+    .protection-item,
+    .add-on-item,
+    .why-item,
+    .phase-content {
+        break-inside: avoid;
+    }
+}
