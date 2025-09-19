@@ -1,98 +1,132 @@
-# Employee Administration System Proposal
+# Client Proposal Form Template
 
-A professional, responsive web form for presenting the Wabanaki Software Solutions Employee Administration System Proposal.
+A professional, responsive web form template for creating client proposals. Perfect for software development, consulting, or any service-based business.
 
-## 🚀 Quick Deploy
+## 🚀 Quick Start
 
-**Open `deploy.html` in your browser for step-by-step deployment instructions!**
+1. **Customize Content**: Edit `index.html` with your proposal details
+2. **Add Your Logo**: Replace `businessLogo.png` with your company logo
+3. **Update Contact Info**: Modify contact details in the HTML
+4. **Deploy**: Use GitHub Pages, Netlify, or Vercel for instant hosting
 
 ## Features
 
-- **Professional Design**: Clean, modern layout with your business logo
+- **Professional Design**: Clean, modern layout with customizable branding
 - **Responsive**: Works perfectly on desktop, tablet, and mobile devices
 - **PDF Export**: One-click export to PDF with professional formatting
 - **Interactive Elements**: Smooth animations and hover effects
 - **Print-Friendly**: Optimized for printing with proper page breaks
+- **Template Ready**: Easy to customize for any client proposal
 
-## Files
+## Files Structure
 
-- `index.html` - Main HTML structure
-- `styles.css` - Professional styling and responsive design
-- `script.js` - PDF export functionality and interactive features
-- `businessLogo.png` - Your business logo (already included)
-- `deploy.html` - Deployment instructions and options
+```
+├── index.html          # Main proposal form
+├── styles.css          # Professional styling
+├── script.js           # PDF export functionality
+├── businessLogo.png    # Your company logo
+├── deploy.html         # Deployment instructions
+└── README.md          # This file
+```
 
-## 🌐 Deploy Online (Get a Shareable Link)
+## 🌐 Deploy Online
 
-### Option 1: Netlify (Recommended - Easiest)
+### GitHub Pages (Free)
+1. Create GitHub repository
+2. Upload all files
+3. Enable Pages in Settings → Pages
+4. Get URL: `https://yourusername.github.io/repository-name`
+
+### Netlify (Easiest)
 1. Go to [netlify.com](https://netlify.com)
 2. Drag and drop your project folder
 3. Get instant live URL
-4. Customize the URL in settings
 
-### Option 2: GitHub Pages (Free)
-1. Create GitHub repository
-2. Upload all files
-3. Enable Pages in Settings
-4. Get URL: `https://yourusername.github.io/repository-name`
-
-### Option 3: Vercel (Fast)
+### Vercel (Fast)
 1. Go to [vercel.com](https://vercel.com)
 2. Sign up with GitHub
 3. Import repository or drag & drop
-4. Deploy instantly
 
-## How to Use
+## Customization Guide
 
-1. **Open the Form**: Simply open `index.html` in any modern web browser
-2. **View the Proposal**: Scroll through the comprehensive proposal content
-3. **Export to PDF**: Click the "Export to PDF" button to generate a professional PDF
-4. **Print**: Use Ctrl+P (or Cmd+P on Mac) to print the proposal
+### 1. Update Content
+Edit `index.html` to customize:
+- Company name and title
+- Proposal sections and pricing
+- Service descriptions
+- Contact information
+- Timeline and deliverables
 
-## Customization
+### 2. Change Colors
+Modify `styles.css` color variables:
+```css
+/* Primary colors */
+--primary-color: #065f46;    /* Main brand color */
+--secondary-color: #10b981;  /* Accent color */
+--accent-color: #f59e0b;     /* Highlight color */
+```
 
-### Colors
-The form uses a professional green color scheme:
-- Primary Green: #065f46
-- Secondary Green: #10b981
-- Accent Orange: #f59e0b
-- Success Green: #10b981
+### 3. Add Your Logo
+- Replace `businessLogo.png` with your logo
+- Recommended size: 200x200px or similar
+- Supports PNG, JPG, SVG formats
 
-### Content
-To modify the proposal content, edit the HTML sections in `index.html`. Each section is clearly marked and easy to update.
+### 4. Update Contact Info
+Find and update in `index.html`:
+```html
+<p>Website: yourwebsite.com</p>
+<p>Email: your.email@company.com</p>
+<p>Phone: (123) 456-7890</p>
+```
 
-### Logo
-Your logo (`businessLogo.png`) appears as a subtle watermark at the bottom of the contact section.
+## Usage
 
-## Browser Compatibility
+1. **Open**: Load `index.html` in any modern browser
+2. **Review**: Scroll through your customized proposal
+3. **Export PDF**: Click "Export to PDF" button
+4. **Share**: Send the live URL or PDF to clients
+
+## Browser Support
 
 - Chrome (recommended)
 - Firefox
 - Safari
 - Edge
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## PDF Export Features
-
-- **High Quality**: 1.5x scale for crisp text and images
-- **Multi-page Support**: Automatically handles content that spans multiple pages
-- **Professional Formatting**: Maintains the visual design in PDF format
-- **Automatic Filename**: Includes date stamp for easy organization
-- **Fallback System**: Multiple PDF generation methods for reliability
+- Mobile browsers
 
 ## Technical Details
 
 - **No Dependencies**: Works offline after initial load
-- **CDN Libraries**: Uses jsPDF and html2canvas from CDN for PDF generation
-- **Modern CSS**: Uses CSS Grid and Flexbox for responsive layouts
-- **Accessibility**: Proper semantic HTML and keyboard navigation support
+- **CDN Libraries**: Uses jsPDF and html2canvas for PDF generation
+- **Modern CSS**: CSS Grid and Flexbox for responsive layouts
+- **Accessibility**: Semantic HTML and keyboard navigation
+- **HTTPS Required**: For PDF export functionality
 
-## Contact Information
+## Template Sections
 
-- **Website**: www.wabanakisoftwaresolutions.com
-- **Email**: riley.gaffney@wabanakisoftwaresolutions.com
-- **Phone**: (506)304-4455
+The template includes these customizable sections:
+- Executive Summary
+- Service Components & Pricing
+- Data Protection & Privacy
+- Optional Add-Ons
+- Development Timeline
+- Why Choose Us
+- Investment Summary
+- Next Steps
+- Contact Information
+
+## Updates & Maintenance
+
+To update your proposal:
+1. Edit the HTML content
+2. Commit changes to Git
+3. Push to your repository
+4. Changes go live automatically (GitHub Pages)
+
+## License
+
+This template is free to use for commercial and personal projects.
 
 ---
 
-*This proposal form is designed to showcase your Employee Administration System offering in a professional, engaging format that converts prospects into clients.*
+**Need help?** Check the deployment guide in `deploy.html` or create an issue in this repository.
